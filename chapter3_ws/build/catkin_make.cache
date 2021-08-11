@@ -1,0 +1,2 @@
+robot_description
+-DCATKIN_DEVEL_PREFIX=/home/chaoban/MyROS_exercise/chapter3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chaoban/MyROS_exercise/chapter3_ws/install -G Unix Makefiles
