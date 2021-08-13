@@ -2,11 +2,28 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="robot_essentials">
 <xacro:macro name="robot_wheel" params="prefix">
 	<link name="${prefix}_wheel">
+		<inertial>
+			<origin xyz="-4.1867E-18 0.0068085 -1.65658661799998E-18" rpy="0 0 0" />
+			<mass value="2.6578" />
+			<inertia
+				ixx="0.00856502765719703"
+				ixy="1.5074118157338E-19"
+				ixz="-4.78150098725052E-19"
+				iyy="0.0136064032096"
+				iyz="-2.68136447099727E-19"
+				izz="0.00856502765719703" />
+		</inertial>
 		<visual>
 			<origin xyz="0 0 0" rpy="1.5707963267949 0 0" />
 				<geometry>
 					<mesh filename="package://robot_description/meshes/wheel.stl"/>
 				</geometry>
+		<collision>
+			<origin xyz="0 0 0" rpy="1.5707963267949 0 0" />
+				<geometry>
+					<mesh filename="package://robot_description/meshes/wheel.stl"/>
+				</geometry>
+		</collision>
 				<material name="">
 					<color rgba="0.79216 0.81961 0.93333 1" />
 				</material>
