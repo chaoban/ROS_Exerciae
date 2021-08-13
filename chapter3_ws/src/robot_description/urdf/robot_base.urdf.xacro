@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="robot_base">
 
 <xacro:include filename="$(find robot_description)/urdf/robot_essentials.xacro" />
+<xacro:include filename="$(find robot_description)/urdf/robot_base_essentials.xacro" />
 
 	<link name="base_link">
 		<inertial>
@@ -41,6 +42,11 @@
 <xacro:wheel_joint prefix="front_right" origin="0.220 -0.250 0"/>
 <xacro:wheel_joint prefix="rear_left" origin="-0.220 0.250 0"/>
 <xacro:wheel_joint prefix="rear_right" origin="-0.220 -0.250 0"/>
+
+<xacro:base_transmission prefix="front_left"/>
+<xacro:base_transmission prefix="front_right"/>
+<xacro:base_transmission prefix="rear_left"/>
+<xacro:base_transmission prefix="rear_right"/>
 
 </robot>
 
