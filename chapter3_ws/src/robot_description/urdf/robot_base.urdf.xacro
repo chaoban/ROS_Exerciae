@@ -3,6 +3,7 @@
 
 <xacro:include filename="$(find robot_description)/urdf/robot_essentials.xacro" />
 <xacro:include filename="$(find robot_description)/urdf/robot_base_essentials.xacro" />
+<xacro:include filename="$(find robot_description)/urdf/gazebo_essentials_base.xacro" />
 
 	<link name="base_link">
 		<inertial>
@@ -47,6 +48,12 @@
 <xacro:base_transmission prefix="front_right"/>
 <xacro:base_transmission prefix="rear_left"/>
 <xacro:base_transmission prefix="rear_right"/>
+
+<xacro:wheel_friction prefix="front_left"/>
+<xacro:wheel_friction prefix="front_right"/>
+<xacro:wheel_friction prefix="rear_left"/>
+<xacro:wheel_friction prefix="rear_right"/>
+
 
 </robot>
 
