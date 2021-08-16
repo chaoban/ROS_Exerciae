@@ -18,16 +18,16 @@
 				<geometry>
 					<mesh filename="package://robot_description/meshes/wheel.stl"/>
 				</geometry>
+				<material name="">
+					<color rgba="0.79216 0.81961 0.93333 1" />
+				</material>
+		</visual>
 		<collision>
 			<origin xyz="0 0 0" rpy="1.5707963267949 0 0" />
 				<geometry>
 					<mesh filename="package://robot_description/meshes/wheel.stl"/>
 				</geometry>
 		</collision>
-				<material name="">
-					<color rgba="0.79216 0.81961 0.93333 1" />
-				</material>
-		</visual>
 	</link>
 </xacro:macro>
 
